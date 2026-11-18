@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Quiz Master">
+  <meta name="theme-color" content="#F6F1E5">
+  <title>Privacy Policy — Quiz Master</title>
+  <style>
+    :root {
+      --paper: #F6F1E5;
+      --paper-dark: #EAE3D0;
+      --card: #FFFFFF;
+      --ink: #171512;
+      --ink-soft: #56514A;
+      --ink-faint: #8F887B;
+      --yellow: #FFD23F;
+      --pink: #FF6B9D;
+      --cyan: #3EE0D5;
+      --purple: #9B6BFF;
+      --orange: #FF9F1C;
+      --green: #3DDC5C;
+      --red: #FF4B4B;
+      --line: 3px solid var(--ink);
+      --shadow: 6px 6px 0 var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(rgba(23,21,18,.12) .8px, transparent .8px);
+      background-size: 15px 15px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.68;
+    }
+
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 34px auto;
+    }
+
+    .top-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 950;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border: var(--line);
+      background: var(--yellow);
+      box-shadow: 3px 3px 0 var(--ink);
+      font-size: 22px;
+      transform: rotate(-4deg);
+    }
+
+    .language-switcher {
+      display: inline-flex;
+      gap: 5px;
+      padding: 5px;
+      border: var(--line);
+      background: var(--card);
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .language-switcher button {
+      border: 2px solid transparent;
+      background: transparent;
+      color: var(--ink-soft);
+      font-size: 13px;
+      font-weight: 900;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: transform .12s ease, background .12s ease;
+    }
+
+    .language-switcher button:hover { transform: translateY(-2px); }
+
+    .language-switcher button.active {
+      color: var(--ink);
+      background: var(--yellow);
+      border-color: var(--ink);
+      box-shadow: 2px 2px 0 var(--ink);
+    }
+
+    .card {
+      padding: clamp(22px, 5vw, 46px);
+      border: 4px solid var(--ink);
+      background: var(--card);
+      box-shadow: 10px 10px 0 var(--ink);
+    }
+
+    .hero-label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 5px 11px;
+      border: 2px solid var(--ink);
+      background: var(--cyan);
+      box-shadow: 3px 3px 0 var(--ink);
+      font-size: 11px;
+      font-weight: 950;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: .98;
+      font-weight: 1000;
+      letter-spacing: -.055em;
+      text-transform: uppercase;
+      text-shadow: 3px 3px 0 var(--yellow);
+    }
+
+    .date {
+      display: inline-block;
+      margin: 20px 0 28px;
+      padding: 6px 10px;
+      border-left: 5px solid var(--orange);
+      background: var(--paper);
+      color: var(--ink-soft);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .intro {
+      padding: 18px 20px;
+      border: 3px solid var(--ink);
+      background: #FFF9E8;
+      box-shadow: 5px 5px 0 var(--ink);
+      color: var(--ink);
+      font-size: 16px;
+      font-weight: 550;
+    }
+
+    h2 {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin: 36px 0 12px;
+      padding-bottom: 9px;
+      border-bottom: 3px solid var(--ink);
+      font-size: clamp(19px, 3vw, 23px);
+      line-height: 1.25;
+      font-weight: 950;
+      letter-spacing: -.025em;
+    }
+
+    h2 .number {
+      flex: 0 0 32px;
+      display: inline-grid;
+      place-items: center;
+      width: 32px;
+      height: 32px;
+      margin-top: -3px;
+      border: 2px solid var(--ink);
+      background: var(--yellow);
+      box-shadow: 2px 2px 0 var(--ink);
+      font-size: 14px;
+    }
+
+    p, li { color: var(--ink-soft); }
+    strong { color: var(--ink); font-weight: 850; }
+    ul { padding-left: 23px; }
+    li { margin: 6px 0; }
+
+    .app-name {
+      color: var(--ink);
+      font-weight: 950;
+      background: linear-gradient(transparent 58%, var(--yellow) 58%);
+    }
+
+    .contact {
+      margin: 14px 0;
+      padding: 16px 18px;
+      border: 3px solid var(--ink);
+      background: var(--pink);
+      box-shadow: 4px 4px 0 var(--ink);
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    .contact strong { font-size: 16px; }
+
+    .service-list {
+      margin: 16px 0;
+      padding: 14px 18px;
+      border: 3px solid var(--ink);
+      background: var(--paper);
+      box-shadow: 4px 4px 0 var(--ink);
+    }
+
+    .service-list li::marker { color: var(--purple); }
+
+    .footer-note {
+      margin-top: 34px;
+      padding-top: 18px;
+      border-top: 2px dashed var(--ink-faint);
+      color: var(--ink-faint);
+      font-size: 12px;
+      font-weight: 650;
+    }
+
+    .lang { display: none; }
+    .lang.active { display: block; }
+
+    a {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:focus-visible, button:focus-visible {
+      outline: 3px dashed var(--purple);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .container { margin: 16px auto 24px; }
+      .top-strip { align-items: flex-start; }
+      .brand { font-size: 11px; }
+      .brand-mark { width: 34px; height: 34px; }
+      .language-switcher button { padding: 7px 8px; font-size: 12px; }
+      .card { box-shadow: 6px 6px 0 var(--ink); }
+      .intro { padding: 15px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="top-strip">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">?</span>
+        <span>ABVSoft · Quiz Master</span>
+      </div>
+      <nav class="language-switcher" aria-label="Language">
+        <button id="ruButton" type="button" onclick="setLanguage('ru')">RU · Русский</button>
+        <button id="enButton" type="button" onclick="setLanguage('en')">EN · English</button>
+      </nav>
+    </div>
+
+    <article class="card">
+      <section id="en" class="lang">
+        <span class="hero-label">ABVSoft · Privacy</span>
+        <h1>Privacy Policy</h1>
+        <p class="date">Last updated: November 18, 2026</p>
+
+        <p class="intro">This Privacy Policy explains how the mobile application <span class="app-name">Quiz Master</span> ("the App") handles information when you use the App.</p>
+
+        <h2><span class="number">1</span> Developer</h2>
+        <p>The App is developed and published by <strong>ABVSoft</strong>.</p>
+        <p class="contact">Privacy contact: <strong>abvsoft.apps@gmail.com</strong></p>
+
+        <h2><span class="number">2</span> Information We Collect</h2>
+        <p>The App does not require you to create an account and does not intentionally collect information such as your name, postal address, phone number, or contacts.</p>
+        <p>Some information may be processed automatically by third-party advertising services integrated into the App. This may include device and advertising information, app usage information, and information used to provide and measure advertising.</p>
+
+        <h2><span class="number">3</span> Advertising</h2>
+        <p>The App uses <strong>Yandex Mobile Ads</strong> with <strong>VK Ads</strong> as an advertising mediation partner to display advertisements and support the development of the App.</p>
+        <p>Depending on your location, applicable laws, and your consent choices, advertising services may process information such as advertising identifiers, device information, IP address, diagnostic information, and information related to ad interactions.</p>
+        <p>For users in regions where consent is required, the App provides a consent dialog before initializing the advertising SDK. If you refuse consent, the App passes this choice to the advertising SDK.</p>
+
+        <h2><span class="number">4</span> Your Consent</h2>
+        <p>When required by applicable privacy laws, you can allow or refuse the processing of personal data for personalized advertising. Your choice is stored locally on your device so that the App can remember your preference.</p>
+        <p>The App does not use your consent choice to create an account or identify you personally.</p>
+
+        <h2><span class="number">5</span> Location Information</h2>
+        <p>The App does not request precise location permission and does not intentionally collect your precise GPS location.</p>
+
+        <h2><span class="number">6</span> Children's Privacy</h2>
+        <p>The App is intended for a general audience and is not specifically directed at children under the age of 13. The App does not knowingly collect personal information directly from children.</p>
+
+        <h2><span class="number">7</span> Third-Party Services</h2>
+        <p>The App may use third-party services to provide advertising and related functionality. These services may process information in accordance with their own privacy policies.</p>
+        <div class="service-list">
+          <ul>
+            <li><strong>Yandex Mobile Ads</strong> — advertising delivery and mediation services.</li>
+            <li><strong>VK Ads</strong> — advertising services provided through the mediation integration.</li>
+          </ul>
+        </div>
+        <p>For more information about how these providers process information, please refer to their applicable privacy documentation.</p>
+
+        <h2><span class="number">8</span> Data Retention</h2>
+        <p>The App itself does not maintain a personal user account or a personal profile. Consent preferences are stored locally on your device. Information processed by third-party advertising providers is subject to their respective retention policies.</p>
+
+        <h2><span class="number">9</span> Data Security</h2>
+        <p>We take reasonable measures to protect information processed through the App. Third-party advertising services may use encrypted connections when transmitting information.</p>
+
+        <h2><span class="number">10</span> Changes to This Privacy Policy</h2>
+        <p>This Privacy Policy may be updated from time to time to reflect changes to the App, advertising services, or applicable legal requirements. The updated version will be published on this page with a new "Last updated" date.</p>
+
+        <h2><span class="number">11</span> Contact</h2>
+        <p>If you have questions about this Privacy Policy or the App's privacy practices, please contact us:</p>
+        <p class="contact"><strong>abvsoft.apps@gmail.com</strong></p>
+        <p class="footer-note">© ABVSoft · Quiz Master</p>
+      </section>
+
+      <section id="ru" class="lang">
+        <span class="hero-label">ABVSoft · Конфиденциальность</span>
+        <h1>Политика конфиденциальности</h1>
+        <p class="date">Дата последнего обновления: 18 ноября 2026 г.</p>
+
+        <p class="intro">Настоящая Политика конфиденциальности объясняет, как мобильное приложение <span class="app-name">Квиз Мастер</span> («Приложение») обрабатывает информацию при его использовании.</p>
+
+        <h2><span class="number">1</span> Разработчик</h2>
+        <p>Приложение разработано и опубликовано <strong>ABVSoft</strong>.</p>
+        <p class="contact">Контакт по вопросам конфиденциальности: <strong>abvsoft.apps@gmail.com</strong></p>
+
+        <h2><span class="number">2</span> Какую информацию мы собираем</h2>
+        <p>Для использования Приложения не требуется создавать аккаунт. Приложение не запрашивает и намеренно не собирает такие данные, как имя, почтовый адрес, номер телефона или список контактов.</p>
+        <p>Некоторые данные могут автоматически обрабатываться сторонними рекламными сервисами, интегрированными в Приложение. Это может включать информацию об устройстве и рекламном идентификаторе, сведения об использовании Приложения и данные, необходимые для показа и измерения эффективности рекламы.</p>
+
+        <h2><span class="number">3</span> Реклама</h2>
+        <p>Приложение использует <strong>Yandex Mobile Ads</strong> с <strong>VK Ads</strong> в качестве партнёра рекламной медиации для показа рекламы и поддержки дальнейшей разработки Приложения.</p>
+        <p>В зависимости от вашего местоположения, применимого законодательства и выбранных вами настроек согласия рекламные сервисы могут обрабатывать, например, рекламный идентификатор, информацию об устройстве, IP-адрес, диагностическую информацию и сведения о взаимодействии с рекламой.</p>
+        <p>Для пользователей из регионов, где требуется согласие, Приложение показывает окно согласия до инициализации рекламного SDK. Если вы отказываетесь от согласия, Приложение передаёт этот выбор рекламному SDK.</p>
+
+        <h2><span class="number">4</span> Ваше согласие</h2>
+        <p>Если это требуется применимым законодательством о конфиденциальности, вы можете разрешить или запретить обработку персональных данных для персонализированной рекламы. Ваш выбор сохраняется локально на устройстве, чтобы Приложение могло запомнить ваше предпочтение.</p>
+        <p>Выбор согласия не используется Приложением для создания аккаунта или самостоятельной идентификации пользователя.</p>
+
+        <h2><span class="number">5</span> Данные о местоположении</h2>
+        <p>Приложение не запрашивает разрешение на точное местоположение и намеренно не собирает точные GPS-координаты пользователя.</p>
+
+        <h2><span class="number">6</span> Конфиденциальность детей</h2>
+        <p>Приложение предназначено для широкой аудитории и не ориентировано специально на детей младше 13 лет. Приложение не осуществляет намеренный прямой сбор персональных данных детей.</p>
+
+        <h2><span class="number">7</span> Сторонние сервисы</h2>
+        <p>Приложение может использовать сторонние сервисы для показа рекламы и связанных с ней функций. Такие сервисы могут обрабатывать информацию в соответствии со своими собственными политиками конфиденциальности.</p>
+        <div class="service-list">
+          <ul>
+            <li><strong>Yandex Mobile Ads</strong> — показ рекламы и услуги рекламной медиации.</li>
+            <li><strong>VK Ads</strong> — рекламные сервисы, предоставляемые через интеграцию медиации.</li>
+          </ul>
+        </div>
+        <p>Более подробная информация об обработке данных этими поставщиками приведена в соответствующей документации и политиках конфиденциальности.</p>
+
+        <h2><span class="number">8</span> Хранение данных</h2>
+        <p>Само Приложение не ведёт персональный аккаунт или персональный профиль пользователя. Настройки согласия сохраняются локально на устройстве. Информация, обрабатываемая сторонними рекламными сервисами, хранится в соответствии с их собственными правилами.</p>
+
+        <h2><span class="number">9</span> Безопасность данных</h2>
+        <p>Мы принимаем разумные меры для защиты информации, обрабатываемой через Приложение. Сторонние рекламные сервисы могут использовать шифрованные соединения при передаче информации.</p>
+
+        <h2><span class="number">10</span> Изменения политики конфиденциальности</h2>
+        <p>Настоящая Политика конфиденциальности может периодически обновляться в связи с изменениями Приложения, рекламных сервисов или применимого законодательства. Актуальная версия будет опубликована на этой странице с указанием новой даты обновления.</p>
+
+        <h2><span class="number">11</span> Контакты</h2>
+        <p>Если у вас есть вопросы по настоящей Политике конфиденциальности или обработке информации в Приложении, свяжитесь с нами:</p>
+        <p class="contact"><strong>abvsoft.apps@gmail.com</strong></p>
+        <p class="footer-note">© ABVSoft · Квиз Мастер</p>
+      </section>
+    </article>
+  </main>
+
+  <script>
+    function setLanguage(language) {
+      document.querySelectorAll('.lang').forEach(section => {
+        section.classList.toggle('active', section.id === language);
+      });
+
+      document.getElementById('ruButton').classList.toggle('active', language === 'ru');
+      document.getElementById('enButton').classList.toggle('active', language === 'en');
+
+      document.documentElement.lang = language;
+      try {
+        localStorage.setItem('privacyPolicyLanguage', language);
+      } catch (error) {
+        // The page still works if local storage is unavailable.
+      }
+    }
+
+    let savedLanguage = null;
+    try {
+      savedLanguage = localStorage.getItem('privacyPolicyLanguage');
+    } catch (error) {}
+
+    const browserLanguage = (navigator.language || '').toLowerCase();
+    const initialLanguage = savedLanguage || (browserLanguage.startsWith('ru') ? 'ru' : 'en');
+    setLanguage(initialLanguage);
+  </script>
+</body>
+</html>
